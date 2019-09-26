@@ -120,7 +120,6 @@ public class StudentSore {
                 Map<String, Integer> sc = ss.SC;//sc 是map集合，课程名及课程分数
                 Set<String> kstrings = sc.keySet();//map里所有的key集合
                 for (String key : kstrings) {//遍历学生对象所有的的课程名
-                    //小组项目经理每天的作业   不需要发文件，只需要统计作业的完成情况
                     if (cn.equals(key)) {
                         scn = scn + sc.get(key);//如果这个学生对象的课程名与课程集合中的课程名相同就 把这个课程的分数相加
                         cnc = cnc + 1;
